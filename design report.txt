@@ -1,0 +1,19 @@
+SuperWordSearch Design Report - yuan liu
+
+Please see the class design diagram I attached. 
+
+For this problem, I have a Solution class, which is abstract class because we'll have two modes searching the word: with wrap or without wrap. The class contains pure virtual method wordSearch for the searching job and also printing methods for debugging and result show purposes. This shows the Polymorphism feature of Object Oriented Design.
+
+So there will be two classes inherits from the Solution class: SolutionNowrap and SolutionWrap, corresponding to the two modes. This shows the Inheritance feature of OO design. And inside the two classes, wordSearch method will be designed differently according to the application requirements. 
+
+There is also a SolutionFactory class, which interacts with the user. It gets a file as input and has enough methods for user to achieve the goal. Using Factory pattern will provide a flexible and dynamic mechanism for the system and make it easier to maintain. Also this hides the most implementation from the users and is relatively safer.
+
+Please note that there is also a pythons script attached named 'validate.py', which is used to validate the input file. The usage is: python validate.py filename
+It helps validating the input before giving it to the program and the error line number will be shown to make it easier to modify. Please ignore it if not necessary.
+
+Note: Please remember to give the right path of the file. 
+Please let me know if there are any problems or running issues.
+Thank you!
+
+
+ 
